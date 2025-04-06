@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chat Bot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <!-- Initial Example Messages -->
+      <div class="user-chat-box">
+        <div class="user-chat-area">
+          <span class="chat-text">Hey hi, this is your friendly AI assistant, always here to help!</span>
+          <img src="user.png" alt="User" class="avatar right-avatar" />
+        </div>
+      </div>
+
+      <div class="ai-chat-box">
+        <div class="ai-chat-area">
+          <img src="ai.png" alt="AI" class="avatar left-avatar" />
+          <span class="chat-text">Hello! How can I assist you today?</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Prompt Input Area -->
+    <div class="prompt-area">
+      <img src="user.png" class="mini-avatar" alt="User" />
+      <input type="text" id="prompt" placeholder="Ask me anything..." />
+      <button id="image"><img src="img.svg" alt=""></button>
+      <input type="file" accept="image/*" style="display: none" id="imageInput" />
+      <button id="submit"><img src="sumbit.svg" alt=""></button>
+      <img src="ai.png" class="mini-avatar" alt="AI" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
